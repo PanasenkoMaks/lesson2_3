@@ -6,7 +6,7 @@ public class Main {
 
     Gryffindor [] gryffindors = {
      new Gryffindor("Garry", "Potter", 333, 33, 33),
-     new Gryffindor("Hermione", "Granger", 22, 33, 22),
+     new Gryffindor("Hermione", "Granger", 22333, 33, 22),
      new Gryffindor("Ron", "Weasley", 22, 3, 3),
 };
     Gryffindor.studentСomparison(gryffindors);
@@ -16,6 +16,8 @@ public class Main {
     new Slytherin("Graham", "Montague", 4,22,44,1,2),
     new Slytherin("Gregory", "Goyle", 5,2,55,2,22),
     };
+        Slytherin.studentСomparison(slytherins);
+        System.out.println();
     Hufflepuff [] hufflepuffs = {
     new Hufflepuff("Zacharias", "Smith", 22,1,5),
     new Hufflepuff("Cedric", "Diggory", 7,5,4 ),

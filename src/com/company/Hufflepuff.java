@@ -25,21 +25,15 @@ public class Hufflepuff extends Hogwarts {
     }
     public static void studentСomparison(Hufflepuff[] hufflepuffs){
         int rezult;
-        String name;
+        String name = hufflepuffs[0].getName();
         int max;
         for (int i = 0; i < hufflepuffs.length; i++) {
             rezult = hufflepuffs[i].hardworking + hufflepuffs[i].loyal + hufflepuffs[i].honest;
             max = hufflepuffs[0].hardworking + hufflepuffs[0].loyal + hufflepuffs[0].honest;
             if (rezult > max){
                 name = hufflepuffs[i].getName();
-                System.out.println("Лучший студент - " +  name);
-                break;
             }
-            else {
-                name = hufflepuffs[0].getName();
-                System.out.println("Лучший студент - " +  name);
-                break;
-            }
+            System.out.println("Лучший студент - " +  name);
         }
     }
 }

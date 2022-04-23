@@ -25,22 +25,16 @@ public class Gryffindor extends Hogwarts {
     }
     public static void studentСomparison(Gryffindor[] gryffindors){
         int rezult;
-        String name;
+        String name = gryffindors[0].getName();
         int max;
         for (int i = 0; i < gryffindors.length; i++) {
             rezult = gryffindors[i].courage + gryffindors[i].honor + gryffindors[i].nobility;
             max = gryffindors[0].courage + gryffindors[0].honor + gryffindors[0].nobility;
             if (rezult > max){
                name = gryffindors[i].getName();
-                System.out.println("Лучший студент - " +  name);
-               break;
-            }
-            else {
-                name = gryffindors[0].getName();
-                System.out.println("Лучший студент - " +  name);
-                break;
             }
         }
+        System.out.println("Лучший студент - " +  name);
     }
 
 }
